@@ -139,3 +139,29 @@ checkout 其实使用版本库里的版本替换工作区里的版本
 
 
 
+关联一个远程库要先生成密钥
+
+```shell
+ssh-keygen -t rsa -C "youremail@qq.com"
+```
+
+github 中添加user/.ssh/id_rsa.pub 内容
+
+github 中创建一个新仓库
+
+```shell
+git remote add origin git@github.com:account_name/learngit.git
+git push -u origin master
+
+之后提交到远程库
+git push origin master
+```
+
+## 从远程库克隆
+
+
+
+```
+
+```
+
