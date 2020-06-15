@@ -91,3 +91,51 @@ git reset --hard 1094a
 git reflog
 ```
 
+## 工作区和暂存区
+
+
+
+git add 将文件添加到了暂存区
+
+git commit 将暂存区文件提交到了当前分支
+
+## 管理修改
+
+
+
+add前丢弃工作区修改。
+
+```shell
+git checkout -- Git.md
+```
+
+add后，commit前丢弃修改，撤销暂存区修改
+
+```shell
+git reset HEAD Git.md
+```
+
+## 删除文件
+
+
+
+提交删除
+
+```shell
+git rm test.txt
+
+git commit -m "remove test.txt"
+```
+
+删错了
+
+```shell
+git checkout -- test.txt
+```
+
+checkout 其实使用版本库里的版本替换工作区里的版本
+
+## 添加到远程仓库
+
+
+
