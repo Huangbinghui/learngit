@@ -11,9 +11,21 @@
 mkdir learngit
 ```
 
-将文件夹设为repository
+将文件夹设为repository,初始化仓库
 
 ```shell
-git add learngit
+git init
+```
+
+向仓库中添加文件
+
+```shell
+git add git.md
+```
+
+提交修改
+
+```
+git commit -m "comment"
 ```
 
