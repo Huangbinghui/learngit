@@ -59,3 +59,35 @@ git commit -m "comment"
 
 
 
+查看git历史记录
+
+```shell
+git log <--pretty=oneline>
+```
+
+回退到以前的版本
+
+​	1.会到上一版本
+
+```shell
+git reset  --hard HEAD^
+```
+
+​	2.回到上上版本(几个版本几个^符号，当写不过来时，用HEAD~100，回退到前100个版本）
+
+```shell
+git reset --hard HEAD^^
+```
+
+反悔，撤销回退（后面几位数是commit id前几个数字）
+
+```shell
+git reset --hard 1094a
+```
+
+历史命令
+
+```shell
+git reflog
+```
+
