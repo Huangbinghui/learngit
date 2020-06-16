@@ -161,7 +161,83 @@ git push origin master
 
 
 
+```shell
+git clone git@github.com:Huangbinghui/learngit.git
 ```
 
+## 分支管理
+
+
+
+创建dev分支，并切换
+
+```shell
+git checkout -b dev
+-b 创建并切换，相当于以下两条
+git branch dev
+
+git checkout dev
+```
+
+切换回分支master
+
+```shell
+git checkout master
+```
+
+dev 分支合并到当前分支
+
+```shell
+git merge dev
+```
+
+合并后删除dev分支
+
+```shell
+git branch -d dev
+```
+
+查看分支
+
+```shell
+git branch
+```
+
+**switch**  切换分支(创建并切换到新的分支)
+
+```shell
+git switch -c dev
+```
+
+切换到master分支
+
+```shell
+git switch master
+```
+
+## 分支管理策略
+
+
+
+禁用`Fast forward`
+
+```shell
+git merge --no-ff -m "merge with no-ff" dev
+```
+
+## bug管理
+
+
+
+`stash`功能，可以把当前工作现场“储藏”起来，等以后恢复现场后继续工作
+
+```shell
+git stash
+
+git stash list
+
+git stash pop
+
+git stash apply stash@{0}
 ```
 
