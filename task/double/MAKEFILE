@@ -1,0 +1,9 @@
+double_task : double_task.o
+	cc -pthread -o double_task double_task.o
+
+.PHONY : clean
+
+
+clean:
+	rm double_task
+	rm *.o

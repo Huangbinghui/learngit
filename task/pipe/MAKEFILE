@@ -1,0 +1,8 @@
+pipe:pipe.o
+	cc -pthread -o pipe pipe.o
+
+.PHONY : clean
+
+clean:
+	rm pipe
+	rm *.o
